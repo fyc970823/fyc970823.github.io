@@ -3,7 +3,7 @@
 
 # Yourself / 个人信息
 nickname:  制霸蛋餅統天下
-motto: 哈摟你好嗎
+motto: 管弦樂真好聽 :D
 logo:  https://i.postimg.cc/Zqc0GN9T/tou-tie.jpg
 github:  https://github.com/fyc970823
 background: # 背景图片
@@ -28,12 +28,33 @@ sidebar:
     導航: # 项目名称
       - https://www.google.com/maps # 超链接
       - 迷路點這 # MDUI 鼠标悬停工具提示
+  工具:
+    coming soon:
+      - https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1 # 超链接
+      - coming soon # MDUI 鼠标悬停工具提示
+  收藏夾: # 補上第三個大類
+    coming soon:
+      - https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1
+      - coming soon
+  友鏈: # 補上第四個大類
+    coming soon:
+      - https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1
+      - coming soon
 
 
 sidebar_color: 
   導航: # 类别名称
     - near_me # 图标
     - mdui-text-color-blue # 图标颜色
+  工具: 
+    - layers                # 大類別綠色疊層圖標
+    - mdui-text-color-green
+  收藏夾: 
+    - assignment 
+    - mdui-text-color-yellow # 黃色
+  友鏈: 
+    - people 
+    - mdui-text-color-pink # 粉紅色
 
 # Header / 页眉信息
 chizaobook: true # true / false 在页眉显示摛藻好句功能
