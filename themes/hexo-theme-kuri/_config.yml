@@ -29,9 +29,6 @@ sidebar:
       - https://www.google.com/maps # 超链接
       - 迷路點這 # MDUI 鼠标悬停工具提示
   工具:
-    coming soon:
-      - https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1 # 超链接
-      - coming soon # MDUI 鼠标悬停工具提示
     Geogebra:
       - https://www.geogebra.org # 超链接
       - Geogebra # MDUI 鼠标悬停工具提示
@@ -59,10 +56,7 @@ sidebar:
     Napkin:
       - https://www.napkin.ai # 超链接
       - Napkin
-  收藏夾: # 補上第三個大類
-    coming soon:
-      - https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1
-      - coming soon # 補上第三個大類
+  收藏夾: 
     交通部中央氣象署:
       - https://www.cwa.gov.tw/V8/C/ # 超链接
       - 交通部中央氣象署
@@ -72,10 +66,7 @@ sidebar:
     University-TW:
       - https://university-tw.ldkrsi.men # 超链接
       - University-TW
-  友鏈: # 補上第四個大類
-    coming soon:
-      - https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1
-      - coming soon
+  友鏈: 
     友站:
       - https://fyc970823.github.io/transmit/links/
       - 友站
