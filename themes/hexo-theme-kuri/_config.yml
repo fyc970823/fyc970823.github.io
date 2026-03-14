@@ -32,14 +32,53 @@ sidebar:
     coming soon:
       - https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1 # 超链接
       - coming soon # MDUI 鼠标悬停工具提示
+    Geogebra:
+      - https://www.geogebra.org # 超链接
+      - Geogebra # MDUI 鼠标悬停工具提示
+    VSCode:
+      - https://code.visualstudio.com # 超链接
+      - Visual Studio Code # MDUI 鼠标悬停工具提示
+    Dev-C++:
+      - https://www.dev-cpp.com # 超链接
+      - Dev-C++ # MDUI 鼠标悬停工具提示
+    Google Colab:
+      - https://colab.research.google.com/?hl=zh-tw # 超链接
+      - Colab # MDUI 鼠标悬停工具提示
+    Python:
+      - https://www.python.org/downloads/ # 超链接
+      - Visual Studio Code # MDUI 鼠标悬停工具提示
+    JAVA:
+      - https://www.java.com/zh-TW/ # 超链接
+      - JAVA # MDUI 鼠标悬停工具提示
+    Gemini:
+      - https://gemini.google.com # 超链接
+      - Gemini
+    ChatGPT:
+      - https://chatgpt.com # 超链接
+      - ChatGPT
+    Napkin:
+      - https://www.napkin.ai # 超链接
+      - Napkin
   收藏夾: # 補上第三個大類
     coming soon:
       - https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1
-      - coming soon
+      - coming soon # 補上第三個大類
+    交通部中央氣象署:
+      - https://www.cwa.gov.tw/V8/C/ # 超链接
+      - 交通部中央氣象署
+    大學甄選入學委員會:
+      - https://www.cac.edu.tw/apply115/index.php # 超链接
+      - 115大學甄選入學委員會
+    University-TW:
+      - https://university-tw.ldkrsi.men # 超链接
+      - University-TW
   友鏈: # 補上第四個大類
     coming soon:
       - https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1
       - coming soon
+    友站:
+      - https://fyc970823.github.io/transmit/links/
+      - 友站
 
 
 sidebar_color: 
@@ -62,23 +101,23 @@ chizaobook: true # true / false 在页眉显示摛藻好句功能
 # Social / 社交按钮
 social:
   C1:
-    - https://github.com/fyc970823
+    - https://fyc970823.github.io/transmit/about/
     - 關於我
     - iconfont iconaboutme
-  C2:
-    - https://github.com/fyc970823
-    - 照片
-    - iconfont iconcarema
+#  C2:
+#    - https://github.com/fyc970823
+#    - 照片
+#    - iconfont iconcarema
   C3:
     - https://steamcommunity.com/profiles/76561199545001325/
     - steam
     - iconfont icongame       # 用「連結」圖標代替標籤
   C6:
-    - https://github.com/fyc970823
+    - https://fyc970823.github.io/transmit/links/
     - 友站
     - iconfont iconlink
   C7:
-    - https://github.com/fyc970823
+    - https://mail.google.com/mail/u/3/#inbox?compose=GTvVlcSKjDcwBLKFdnknxhCtlnHHTpwKhlrrZTwSQJSFdXCcxWKXnMHsVHmMjmlzPhsWwZgtLksWV
     - 信箱
     - iconfont iconemail
 
