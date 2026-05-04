@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+ <head> 
+  <meta charset="utf-8" /> 
+  <title>蛋餅の網</title> 
+  <link rel="icon" href="/images/fav.png" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <meta name="keywords" content="關鍵字1, 關鍵字2, ..." />
+  <meta name="description" content="網站簡介" /> 
+  <link rel="canonical" href="https://fyc970823.github.io" /> 
+  <link rel="stylesheet" href="/css/style.css" /> 
+  <link rel="stylesheet" href="/css/mdui.css" importance="high"/> 
+  
+  <link rel="stylesheet" href="//blog.kuri.ink/lib/aplayer@1.10.0/aplayer.min.css" /> 
+  
+  <script src="//cdn.kuri.ink/js/mdui/mdui.min.js" async></script>
+  <style>
+   @import url("/css/iconfont.css");
+  </style>
+ <meta name="generator" content="Hexo 8.1.1"></head> 
+ <body> 
+   <script>
+    let images = "https://i.postimg.cc/9FJjf4gj/tu-pian-2026-03-10-214028262.png"
+    images = images.split(',')
+    let currentIndex = 0;
+
+    function changeBackground() {
+        //document.getElementById("bg").style.opacity = 1; // 渐隐
+        setTimeout(() => {
+            document.getElementById("bg").style.backgroundImage = `url(${images[currentIndex]})`;
+            document.getElementById("bg").style.opacity = 1; // 渐显
+            currentIndex = (currentIndex + 1) % images.length;
+        }, 1000); // 与transition时间一致
+    }
+
+    changeBackground()
+    setInterval(changeBackground, 15000); // 每15秒切换一次背景
+</script>
+  <div class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-layout-auto mdui-loaded"> 
+   <!-- background --> 
+   <div id="bg" class="index_bg"></div> 
+   <!-- main --> 
+   <div>
+    
+    <header class="appbar mdui-appbar mdui-appbar-fixed" importance="high"> 
+    <div class="mdui-toolbar mdui-color-theme card-content"> 
+     <span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-drawer="{target: '#main-drawer', swipe: true}"> <i class="mdui-icon material-icons" mdui-tooltip="{content: '菜单'}">menu</i> </span> 
+     <div class="mdui-toolbar-spacer">
+       
+      <chizaobook style="line-height: 1em; color:#F5F5F5;;"> 
+       <script>
+        let app = document.createElement('script');
+            app.src = 'https://cdn.jsdelivr.net/gh/ChizaoProject/chizaobook@master/app.js';
+            app.async = true;
+            app.onload = function () {
+              chizaobook = new Chizaobook({
+                container: "chizaobook", // string
+                packageSource: "https://cdn.jsdelivr.net/gh/fyc970823/my-quotes@latest/package_source.json", // string
+                packageType: null // int
+          })
+          chizaobook.selector();
+          };
+        document.head.appendChild(app);
+       </script> 
+       <!--<div class="mdui-chip" style="margin: auto; position: fixed; transform: translate(0, -50%);">
+             <span id="time" class="mdui-chip-title" style="transform: translate(0, -50%);"></span>
+             <script>
+               var datetime = new Date();
+               console.log(datetime);
+             </script>
+           </div>
+           --> 
+      </chizaobook>
+      
+     </div> 
+     <a href="https://github.com/fyc970823" target="_blank" class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-tooltip="{content: 'Github'}"> 
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve" class="mdui-icon" style="width: 24px;height:24px;"> 
+       <path fill-rule="evenodd" clip-rule="evenodd" fill="#ffffff" d="M18,1.4C9,1.4,1.7,8.7,1.7,17.7c0,7.2,4.7,13.3,11.1,15.5c0.8,0.1,1.1-0.4,1.1-0.8c0-0.4,0-1.4,0-2.8c-4.5,1-5.5-2.2-5.5-2.2c-0.7-1.9-1.8-2.4-1.8-2.4c-1.5-1,0.1-1,0.1-1c1.6,0.1,2.5,1.7,2.5,1.7c1.5,2.5,3.8,1.8,4.7,1.4c0.1-1.1,0.6-1.8,1-2.2c-3.6-0.4-7.4-1.8-7.4-8.1c0-1.8,0.6-3.2,1.7-4.4c-0.2-0.4-0.7-2.1,0.2-4.3c0,0,1.4-0.4,4.5,1.7c1.3-0.4,2.7-0.5,4.1-0.5c1.4,0,2.8,0.2,4.1,0.5c3.1-2.1,4.5-1.7,4.5-1.7c0.9,2.2,0.3,3.9,0.2,4.3c1,1.1,1.7,2.6,1.7,4.4c0,6.3-3.8,7.6-7.4,8c0.6,0.5,1.1,1.5,1.1,3c0,2.2,0,3.9,0,4.5c0,0.4,0.3,0.9,1.1,0.8c6.5-2.2,11.1-8.3,11.1-15.5C34.3,8.7,27,1.4,18,1.4z"></path> 
+      </svg> </a> 
+    </div> 
+   </header>  
+
+    <div class="mdui-drawer mdui-drawer-close sidebar" id="main-drawer"> 
+     <div class="mdui-list" mdui-collapse="{accordion: true}" style="margin-bottom: 75px;"> 
+       
+      <div class="
+                mdui-collapse-item
+                "> 
+       <div class="mdui-collapse-item-header mdui-list-item mdui-ripple"> 
+        <i class="
+                    mdui-list-item-icon
+                    mdui-icon
+                    material-icons
+                    mdui-text-color-blue">near_me</i>
+        <div class="mdui-list-item-content">
+         導航
+        </div> 
+        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i> 
+       </div>
+        
+         <div class="mdui-collapse-item-body mdui-list"> 
+          <a href="https://www.instagram.com/fyc_1940" target="_blank" mdui-tooltip="{content: '作者IG'}" class="
+                        mdui-list-item
+                        mdui-ripple
+                        ">IG</a> 
+         </div>
+          
+         <div class="mdui-collapse-item-body mdui-list"> 
+          <a href="https://music.163.com/#/playlist?id=2321287288" target="_blank" mdui-tooltip="{content: '東方管弦樂'}" class="
+                        mdui-list-item
+                        mdui-ripple
+                        ">網站歌單</a> 
+         </div>
+          
+         <div class="mdui-collapse-item-body mdui-list"> 
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&amp;list=RDdQw4w9WgXcQ&amp;start_radio=1" target="_blank" mdui-tooltip="{content: '一起搖滾'}" class="
+                        mdui-list-item
+                        mdui-ripple
+                        ">一起搖滾</a> 
+         </div>
+          
+         <div class="mdui-collapse-item-body mdui-list"> 
+          <a href="https://www.google.com/maps" target="_blank" mdui-tooltip="{content: '迷路點這'}" class="
+                        mdui-list-item
+                        mdui-ripple
+                        ">導航</a> 
+         </div>
+         
+      </div> 
+       
+      <div class="
+                mdui-collapse-item
+                "> 
+       <div class="mdui-collapse-item-header mdui-list-item mdui-ripple"> 
+        <i class="
+                    mdui-list-item-icon
+                    mdui-icon
+                    material-icons
+                    mdui-text-color-green">layers</i>
+        <div class="mdui-list-item-content">
+         工具
+        </div> 
+        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i> 
+       </div>
+        
+         <div class="mdui-collapse-item-body mdui-list"> 
+          <a href="https://www.geogebra.org" target="_blank" mdui-tooltip="{content: 'Geogebra'}" class="
+                        mdui-list-item
+                        mdui-ripple
+                        ">Geogebra</a> 
+         </div>
+          
+         <div class="mdui-collapse-item-body mdui-list"> 
+          <a href="https://code.visualstudio.com" target="_blank" mdui-tooltip="{content: 'Visual Studio Code'}" class="
+                        mdui-list-item
+                        mdui-ripple
+                        ">VSCode</a> 
+         </div>
+          
+         <div class="mdui-collapse-item-body mdui-list"> 
+          <a href="https://www.dev-cpp.com" target="_blank" mdui-tooltip="{content: 'Dev-C++'}" class="
+                        mdui-list-item
+                        mdui-ripple
+                        ">Dev-C++</a> 
+         </div>
+          
+         <div class="mdui-collapse-item-body mdui-list"> 
+          <a href="https://colab.research.google.com/?hl=zh-tw" target="_blank" mdui-tooltip="{content: 'Colab'}" class="
+                        mdui-list-item
+                        mdui-ripple
+                        ">Google Colab</a> 
+         </div>
+          
+         <div class="mdui-collapse-item-body mdui-list"> 
+          <a href="https://www.python.org/downloads/" target="_blank" mdui-tooltip="{content: 'Visual Studio Code'}" class="
+                        mdui-list-item
+                        mdui-ripple
+                        ">Python</a> 
+         </div>
+          
+         <div class="mdui-collapse-item-body mdui-list"> 
+          <a href="https://www.java.com/zh-TW/" target="_blank" mdui-tooltip="{content: 'JAVA'}" class="
+                        mdui-list-item
+                        mdui-ripple
+                        ">JAVA</a> 
+         </div>
+          
+         <div class="mdui-collapse-item-body mdui-list"> 
+          <a href="https://gemini.google.com" target="_blank" mdui-tooltip="{content: 'Gemini'}" class="
+                        mdui-list-item
+                        mdui-ripple
+                        ">Gemini</a> 
+         </div>
+          
+         <div class="mdui-collapse-item-body mdui-list"> 
+          <a href="https://chatgpt.com" target="_blank" mdui-tooltip="{content: 'ChatGPT'}" class="
+                        mdui-list-item
+                        mdui-ripple
+                        ">ChatGPT</a> 
+         </div>
+          
+         <div class="mdui-collapse-item-body mdui-list"> 
+          <a href="https://www.napkin.ai" target="_blank" mdui-tooltip="{content: 'Napkin'}" class="
+                        mdui-list-item
+                        mdui-ripple
+                        ">Napkin</a> 
+         </div>
+         
+      </div> 
+       
+      <div class="
+                mdui-collapse-item
+                "> 
+       <div class="mdui-collapse-item-header mdui-list-item mdui-ripple"> 
+        <i class="
+                    mdui-list-item-icon
+                    mdui-icon
+                    material-icons
+                    mdui-text-color-yellow">assignment</i>
+        <div class="mdui-list-item-content">
+         收藏夾
+        </div> 
+        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i> 
+       </div>
+        
+         <div class="mdui-collapse-item-body mdui-list"> 
+          <a href="https://www.cwa.gov.tw/V8/C/" target="_blank" mdui-tooltip="{content: '交通部中央氣象署'}" class="
+                        mdui-list-item
+                        mdui-ripple
+                        ">交通部中央氣象署</a> 
+         </div>
+          
+         <div class="mdui-collapse-item-body mdui-list"> 
+          <a href="https://www.cac.edu.tw/apply115/index.php" target="_blank" mdui-tooltip="{content: '115大學甄選入學委員會'}" class="
+                        mdui-list-item
+                        mdui-ripple
+                        ">大學甄選入學委員會</a> 
+         </div>
+          
+         <div class="mdui-collapse-item-body mdui-list"> 
+          <a href="https://university-tw.ldkrsi.men" target="_blank" mdui-tooltip="{content: 'University-TW'}" class="
+                        mdui-list-item
+                        mdui-ripple
+                        ">University-TW</a> 
+         </div>
+         
+      </div> 
+       
+      <div class="
+                mdui-collapse-item
+                "> 
+       <div class="mdui-collapse-item-header mdui-list-item mdui-ripple"> 
+        <i class="
+                    mdui-list-item-icon
+                    mdui-icon
+                    material-icons
+                    mdui-text-color-pink">people</i>
+        <div class="mdui-list-item-content">
+         友鏈
+        </div> 
+        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i> 
+       </div>
+        
+         <div class="mdui-collapse-item-body mdui-list"> 
+          <a href="https://fyc970823.github.io/main/links/" target="_blank" mdui-tooltip="{content: '友站'}" class="
+                        mdui-list-item
+                        mdui-ripple
+                        ">友站</a> 
+         </div>
+         
+      </div> 
+      
+     </div> 
+    </div> 
+   </div> 
+
+   <div id="container" class="container"> 
+    <div class="card"> 
+     <div id="card-content" class="card-content"> 
+      <center>
+       <div class="logo"></div>
+       <style>
+        .logo {
+	        width: 100px;
+	        height: 100px;
+	        margin-top: -50px;
+	        border:1px soild white;
+	        background: url('https://i.postimg.cc/Zqc0GN9T/tou-tie.jpg') no-repeat center;
+	        border-radius: 50px;
+	        background-size: 100px;
+        }
+       </style>
+      </center> 
+      <b class="nickname">馮の網站</b> 
+      <br /> 
+      <b class="motto">管弦樂真好聽 :D 去左下角聽音樂!</b> 
+     </div> 
+    </div> 
+
+    <div class="card" style="margin-top: 1%;"> 
+     <div id="card-content" class="card-content"> 
+      <div class="social">
+         
+        <a href="https://fyc970823.github.io/main/about/" target="_blank"><button class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '關於我'}"><span class="iconfont iconaboutme"></span></button></a> 
+        
+        <a href="https://steamcommunity.com/profiles/76561199545001325/" target="_blank"><button class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'steam'}"><span class="iconfont icongame"></span></button></a> 
+        
+        <a href="https://fyc970823.github.io/main/links/" target="_blank"><button class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '友站'}"><span class="iconfont iconlink"></span></button></a> 
+        
+        <a href="https://mail.google.com/mail/u/3/#inbox?compose=GTvVlcSKjDcwBLKFdnknxhCtlnHHTpwKhlrrZTwSQJSFdXCcxWKXnMHsVHmMjmlzPhsWwZgtLksWV" target="_blank"><button class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '信箱'}"><span class="iconfont iconemail"></span></button></a> 
+       
+      </div> 
+     </div> 
+    </div> 
+
+   </div>  
+
+   <!-- footer --> 
+   <div id="footer" class="footer"> 
+    <p class="remark">
+      眾所周知，我是蛋餅<br>
+      
+      <br>Powered By <a href="https://hexo.io/" target="_blank"> Hexo </a> And <a href="https://mdui.org" target="_blank">MDUI</a>.<br /> Theme ❤ <a href="https://kuri.ink/" target="">kuri</a>. 
+
+    </p> 
+   </div>  
+   <script async="" src="//blog.kuri.ink/lib/aplayer@1.10.0/aplayer.min.js" type="text/javascript"></script> 
+   <script async="" src="//blog.kuri.ink/lib/meting/meting.min.js" type="text/javascript"></script>
+
+   
+      <meting-js style="position: absolute; z-index:99999;" type="playlist" server="" id="2321287288" fixed="true"></meting-js> 
+   
+
+   
+      <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+      <script>LA.init({id: "",ck: ""})</script>
+   
+
+  </div>
+ </body>
+</html>
