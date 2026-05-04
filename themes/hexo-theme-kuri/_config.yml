@@ -68,7 +68,7 @@ sidebar:
       - University-TW
   友鏈: 
     友站:
-      - https://fyc970823.github.io/transmit/links/
+      - https://fyc970823.github.io/main/links/
       - 友站
 
 
@@ -92,7 +92,7 @@ chizaobook: true # true / false 在页眉显示摛藻好句功能
 # Social / 社交按钮
 social:
   C1:
-    - https://fyc970823.github.io/transmit/about/
+    - https://fyc970823.github.io/main/about/
     - 關於我
     - iconfont iconaboutme
 #  C2:
@@ -104,7 +104,7 @@ social:
     - steam
     - iconfont icongame       # 用「連結」圖標代替標籤
   C6:
-    - https://fyc970823.github.io/transmit/links/
+    - https://fyc970823.github.io/main/links/
     - 友站
     - iconfont iconlink
   C7:
